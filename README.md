@@ -55,8 +55,7 @@ When dominant patterns appear with close proportions (e.g., 0.55 vs 0.45), they 
 
 ### Input
 
-- Files must follow the naming pattern:  transcriptions_{lang}_*.csv
-  Examples:  transcriptions_fr_validation.csv, transcriptions_es_dev.csv, transcriptions_de_test.csv
+- Files must follow the naming pattern:  transcriptions_{lang}_*.csv (e.g., transcriptions_fr_validation.csv, transcriptions_es_dev.csv, transcriptions_de_test.csv)
   
 - The language code (`fr`, `es`, `de`, `pt`, etc.) is extracted directly from the filename.
 
