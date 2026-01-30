@@ -15,6 +15,11 @@ Annotation conventions do not depend solely on the model, they also depend on th
 
 This tool enables empirical identification of those tendencies so that guidelines are aligned with observed usage rather than defined arbitrarily.
 
+The goal is consistency between:
+
+```
+Annotation format ≈ Model format ≈ Production format
+```
 
 ---
 
