@@ -1,0 +1,55 @@
+# French Annotation Guidelines for Parakeet
+
+## 1. General Principles
+- Everything must be written in **lowercase**, **with accents**, except for proper nouns (Cardif).
+- **No punctuation**: ? ! : . , ; - _
+- Keep **spoken abbreviations/contractions**: gonna, gotta, etc.
+
+- **Personal data** (name, address, ID, SSN, passport, etc.) must be enclosed with #.
+  Example: "Hello my name is #Alice Dupont# my ID is 1 2 3#"
+
+- **Hesitations and non-speech sounds**: Put between <> expressions like "hm", "hmm", "euh", "eh", "ah"...
+  Example: "I love euhhhh sandwich hmmm" → **"I love <euhhhh> sandwich <hmmm>"**
+  Note: It does not matter if you put <hm> or <hmmmmmmmmmmm> we will normalize it.
+
+---
+
+## 2. Model-specific Rules (Parakeet)
+- **Spelling letters**: Spell without spaces → dang
+- **Dates**: use dd month yyyy format → 10 february 2023 ✅, 10/02/2023 ❌
+- **Units**: use full words → 10 kilometers ✅, 10 km ❌
+- **Currency amounts**: use written words → dollars ✅, euros ✅, $ ❌, € ❌
+- **Ordinal numbers**: use written words → first ✅, 1st ❌
+- **General number style**: use digits → 100 ✅, one hundred ❌
+- **Digit grouping**: Use space as separator for:
+  - **Large numbers (≥1000)**: 1 234
+  - **Phone numbers**: 06 12 34 56 78
+- **Percentages**: symbol attached to number → 20% ✅, 20 % ❌
+
+---
+
+## 3. Special Cases
+- **Date format variations**: While the standard format is "dd month yyyy", if the speaker pronounces the date differently, transcribe it as heard.
+  Examples of acceptable variations: "february 10", "10 de fevereiro de 2023"
+
+- **Incomplete words**: If a person does not finish a word, transcribe exactly what is heard.
+  Example: "he has mar" (instead of "he has marked") → **he has mar**
+
+- **Inaudible speech handling**:
+  - **Single inaudible segment**: Split the box to isolate [inaudible].
+    Example: "Bonjour je m'appele [inaudible] bye thanks for" →
+    Box 1: "Bonjour je m'appele", Box 2: "[inaudible]", Box 3: "bye thanks for"
+
+  - **Multiple inaudible segments**: Tag entire call as [inaudible].
+    Example: "Bonjour [inaudible] je [inaudible] m'appele [inaudible] bye [inaudible] thanks for" → **[inaudible]**
+
+---
+
+## 4. Detection Confidence
+- **Currency format**: default value
+- **Date format**: default value
+- **Thousand separator**: 100.0% confidence (based on specific French/parakeet data)
+- **Percentage format**: 75.0% confidence (based on specific French/parakeet data)
+- **Unit format**: 80.0% confidence (based on specific French/parakeet data)
+- **Ordinal style**: 80.0% confidence (based on specific French/parakeet data)
+- **Number style**: 60.7% confidence (based on specific French/parakeet data)

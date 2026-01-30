@@ -1,0 +1,13 @@
+file,model,currency_format,date_format,thousand_separator_format,percent_format,unit_format,ordinal_style,number_style,currency_majority_pct,date_majority_pct,thousand_separator_majority_pct,percent_majority_pct,unit_majority_pct,ordinal_majority_pct,number_majority_pct,uppercase_frequency,punctuation_frequency,hesitation_frequency
+transcriptions_de_dev_363.csv,whisper,not_detected,not_detected,dot,symbol_no_space,long,word,digit,0.0,0.0,1.0,1.0,1.0,1.0,0.6785714285714286,0.058845743807334365,0.928374655647383,0.07713498622589532
+transcriptions_de_dev_363.csv,canary,not_detected,not_detected,dot,word,long,word,digit,0.0,0.0,1.0,0.8333333333333334,1.0,1.0,0.5897435897435898,0.062220054608544274,1.0,0.07713498622589532
+transcriptions_de_dev_363.csv,parakeet,not_detected,not_detected,dot,word,short,word,digit,0.0,0.0,1.0,0.6666666666666666,0.6,1.0,0.6962025316455697,0.06305653515586866,1.0,0.07162534435261708
+transcriptions_pt_dev_386.csv,whisper,not_detected,not_detected,dot,symbol_no_space,long,word,word,0.0,0.0,1.0,1.0,0.8823529411764706,1.0,0.5048543689320388,0.023494558533419224,0.8937823834196891,0.22538860103626943
+transcriptions_pt_dev_386.csv,canary,not_detected,not_detected,dot,symbol_no_space,long,word,digit,0.0,0.0,1.0,1.0,0.8333333333333334,1.0,0.5818181818181818,0.02529200235039156,1.0,0.21761658031088082
+transcriptions_pt_dev_386.csv,parakeet,not_detected,not_detected,dot,symbol_no_space,long,word,digit,0.0,0.0,1.0,1.0,0.8333333333333334,1.0,0.5740740740740741,0.02527510784731959,1.0,0.22538860103626943
+transcriptions_fr_dev_289.csv,whisper,not_detected,not_detected,space,symbol_no_space,long,digit_suffix,digit,0.0,0.0,1.0,1.0,0.7272727272727273,0.5,0.8225806451612904,0.022771982848245328,1.0,0.0
+transcriptions_fr_dev_289.csv,canary,not_detected,not_detected,space,symbol_space,long,word,word,0.0,0.0,1.0,0.5,1.0,1.0,0.5254237288135594,0.022688737480311263,1.0,0.0
+transcriptions_fr_dev_289.csv,parakeet,not_detected,not_detected,space,symbol_no_space,long,word,digit,0.0,0.0,1.0,0.75,0.8,0.8,0.6065573770491803,0.021963338294136426,1.0,0.0
+transcriptions_es_dev_408.csv,whisper,not_detected,not_detected,dot,symbol_no_space,long,word,digit,0.0,0.0,1.0,1.0,1.0,1.0,0.7682926829268293,0.02276566755592327,0.9877450980392157,0.0
+transcriptions_es_dev_408.csv,canary,not_detected,not_detected,dot,symbol_no_space,long,word,digit,0.0,0.0,1.0,1.0,1.0,1.0,0.6962025316455697,0.02241320072902981,1.0,0.0
+transcriptions_es_dev_408.csv,parakeet,not_detected,not_detected,dot,symbol_no_space,long,word,digit,0.0,0.0,1.0,0.8,1.0,1.0,0.6625,0.021483717220278364,1.0,0.0
