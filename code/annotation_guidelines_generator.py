@@ -701,8 +701,8 @@ def generate_guidelines(lang_code="fr", model_name="whisper"):
 
 - **Inaudible speech handling**:
   - **Single inaudible segment**: Split the box to isolate [inaudible].
-    Example: "Bonjour je m'appele [inaudible] bye thanks for" →
-    Box 1: "Bonjour je m'appele", Box 2: "[inaudible]", Box 3: "bye thanks for"
+    Example: "Bonjour je m'appelle [inaudible] bye thanks for" →
+    Box 1: "Bonjour je m'appelle", Box 2: "[inaudible]", Box 3: "bye thanks for"
 
   - **Multiple inaudible segments**: Tag entire call as [inaudible].
     Example: "Bonjour [inaudible] je [inaudible] m'appele [inaudible] bye [inaudible] thanks for" → **[inaudible]**
