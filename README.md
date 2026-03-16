@@ -64,15 +64,15 @@ When dominant patterns appear with close proportions (e.g., 0.55 vs 0.45), they 
 - The list of supported models is defined inside `analyze()` as:
 
   ```python
-  model_identifiers = ["whisper", "canary", "parakeet"]
+  model_names = ["whisper", "canary", "parakeet"]
   ```
 
-  To support a new model, simply add its name to this list.  
+  To support a new model family, simply add its name to this list.  
 
   Example:
 
   ```python
-  model_identifiers = ["whisper", "canary", "parakeet", "new_model_name"]
+  model_names = ["whisper", "canary", "parakeet", "new_model_name"]
   ```
  
 If these conventions are not respected, model detection or language-based aggregation may fail.
@@ -80,10 +80,13 @@ If these conventions are not respected, model detection or language-based aggreg
 
 ### Output
 
-The file `model_conventions_summary.csv` contains one row per (file x model).
-
-Each row summarizes the dominant formatting conventions and stylistic tendencies identified for that model on that dataset.
-
+- `transcription_dataset_analysis.py` generates `model_conventions_summary.csv`, with one row per file/model combination.  
+  Each row summarizes the dominant formatting conventions and stylistic tendencies detected for that model on that dataset.
+  
+- `html_annotation_guidelines.py` reads `model_conventions_summary.csv` and generates annotation guidelines.  
+  - It produces both a Markdown and HTML representation of the guidelines.  
+  - Only the HTML version is displayed on screen.  
+  - Optionally, by setting `guidelines_for_ds=True` when calling `generate_guidelines()`, you can include detection confidence metrics for further analysis.
 
 ---
 
