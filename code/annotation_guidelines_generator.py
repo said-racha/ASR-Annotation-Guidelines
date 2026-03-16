@@ -705,7 +705,7 @@ def generate_guidelines(lang_code="fr", model_name="whisper"):
     Box 1: "Bonjour je m'appelle", Box 2: "[inaudible]", Box 3: "bye thanks for"
 
   - **Multiple inaudible segments**: Tag entire call as [inaudible].
-    Example: "Bonjour [inaudible] je [inaudible] m'appele [inaudible] bye [inaudible] thanks for" → **[inaudible]**
+    Example: "Bonjour [inaudible] je [inaudible] m'appelle [inaudible] bye [inaudible] thanks for" → **[inaudible]**
 
 ---
 
